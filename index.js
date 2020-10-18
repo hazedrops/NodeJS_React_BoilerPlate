@@ -21,7 +21,7 @@ mongoose.connect(config.mongoURI, {
 }).then(() => console.log('MongoDB Connected...'))
 .catch(err => console.log(err));
 
-app.get('/', (req, res) => res.send('Hello Javascript World!!!!!!!'));
+app.get('/', (req, res) => res.send('Hello Javascript World!'));
 
 app.post('/register', (req, res) => {
   // Put the information for the registration into the DB
